@@ -8,10 +8,11 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cross-env BROWSER=none HOST=0.0.0.0 PORT=${PORT:-3000} react-scripts start",
+    "build": "cross-env CI=false react-scripts build",
+    "test": "cross-env CI=true react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "healthcheck": "node -e \"require('http').get(process.env.HEALTH_URL||'http://localhost:3000',res=>{console.log('OK',res.statusCode);process.exit(0)}).on('error',()=>process.exit(1))\""
   },
   "eslintConfig": {
     "extends": "react-app"
