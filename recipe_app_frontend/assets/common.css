@@ -1,0 +1,121 @@
+:root {
+  /* Colors */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-121212: #121212;
+  --color-129575: #129575;
+  --color-d9d9d9: #d9d9d9;
+  --color-303030: #303030;
+  --color-ffc107: #ffc107;
+  --color-ff9c00: #ff9c00;
+
+  /* Aliases from design tokens */
+  --color-colour-styles-neutral-colour-white: var(--color-ffffff);
+  --color-colour-styles-neutral-colour-black: var(--color-000000);
+
+  /* Typography variables used on this screen */
+  --typo-60-family: 'Poppins', sans-serif;
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line-height: 45px;
+  --typo-60-letter-spacing: 0;
+  --typo-60-text-align: left;
+  --typo-60-color: var(--color-000000);
+
+  --typo-61-family: 'Poppins', sans-serif;
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line-height: 30px;
+  --typo-61-letter-spacing: 0;
+  --typo-61-text-align: left;
+  --typo-61-color: var(--color-121212);
+
+  --typo-62-family: 'Poppins', sans-serif;
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line-height: 16.5px;
+  --typo-62-letter-spacing: 0;
+  --typo-62-text-align: center;
+  --typo-62-color: var(--color-ff9c00);
+
+  --typo-63-family: 'Poppins', sans-serif;
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line-height: 16.5px;
+  --typo-63-letter-spacing: 0;
+  --typo-63-text-align: left;
+  --typo-63-color: var(--color-000000);
+
+  --typo-64-family: 'Poppins', sans-serif;
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line-height: 16.5px;
+  --typo-64-letter-spacing: 0;
+  --typo-64-text-align: left;
+  --typo-64-color: var(--color-d9d9d9);
+
+  --typo-65-family: 'Poppins', sans-serif;
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line-height: 16.5px;
+  --typo-65-letter-spacing: 0;
+  --typo-65-text-align: left;
+  --typo-65-color: var(--color-d9d9d9);
+
+  --typo-66-family: 'Poppins', sans-serif;
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line-height: 21px;
+  --typo-66-letter-spacing: 0;
+  --typo-66-text-align: left;
+  --typo-66-color: var(--color-121212);
+
+  --typo-67-family: 'SF Pro Display', system-ui, -apple-system, sans-serif;
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line-height: 17.900390625px;
+  --typo-67-letter-spacing: -0.16500000655651093px;
+  --typo-67-text-align: left;
+  --typo-67-color: var(--color-303030);
+
+  --typo-58-family: 'Poppins', sans-serif;
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line-height: 24px;
+  --typo-58-letter-spacing: 0;
+  --typo-58-text-align: center;
+  --typo-58-color: var(--color-ffffff);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Component styles */
+  --style-10-bg: var(--color-ffffff); /* screen background */
+  --style-11-bg: var(--color-129575); /* primary button */
+  --style-11-radius: 10px;
+  --style-20-radius: 10px;
+
+  /* Borders */
+  --style-30-border: 1.5px solid var(--color-d9d9d9);
+  --style-30-radius: 10px;
+
+  /* Home indicator */
+  --style-32-bg: var(--color-121212);
+  --style-32-radius: 100px;
+
+  /* Elevated social buttons */
+  --style-126-bg: var(--color-ffffff);
+  --style-126-radius: 10px;
+  --style-126-shadow: 0 8px 25px 0 #2020201a; /* subtle shadow */
+}
+
+/* Global resets */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--style-10-bg); }
+img { display: block; }
+button { font: inherit; }
+p { margin: 0; }
